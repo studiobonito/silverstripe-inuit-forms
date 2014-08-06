@@ -6,7 +6,7 @@
  * @author       Tom Densham <tom.densham@studiobonito.co.uk>
  * @copyright    Studio Bonito Ltd.
  */
-class FormFieldStyleExtension extends DataExtension
+class FormFieldStyleExtension extends \DataExtension
 {
     /**
      * @var string
