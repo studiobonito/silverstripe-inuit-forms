@@ -1,7 +1,10 @@
 <?php namespace StudioBonito\SilverStripe\Inuit\Forms\Extensions;
 
 use ClassInfo;
+use FieldGroup;
 use SSViewer;
+use Tab;
+use TabSet;
 
 /**
  * An extension to transform the {@link \FormField} objects
