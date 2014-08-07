@@ -1,3 +1,6 @@
+FieldList:
+  extensions:
+    - 'StudioBonito\SilverStripe\Inuit\Forms\Extensions\InuitFieldList'
 FormField:
   extensions:
     - 'StudioBonito\SilverStripe\Inuit\Forms\Extensions\FormFieldStyleExtension'
