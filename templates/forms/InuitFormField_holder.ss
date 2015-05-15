@@ -5,14 +5,18 @@
                         <% if $Title %><label for="{$ID}">$Title</label><% end_if %>
             </div><!--
         ---><div class="layout__item<% if $FieldClass %> $FieldClass<% end_if %>">
-                $Field
+                <div class="middleColumn">
+                    $Field
+                </div>
                 <% if $Description %><span class="description">$Description</span><% end_if %>
                 <% if $Message %><span class="{$MessageClass} {$MessageType}">$Message</span><% end_if %>
             </div>
         </div>
     <% else %>
         <% if $Title %><label for="{$ID}">$Title</label><% end_if %>
-        $Field
+        <div class="middleColumn">
+            $Field
+        </div>
         <% if $Description %><span class="description">$Description</span><% end_if %>
         <% if $Message %><span class="{$MessageClass} {$MessageType}">$Message</span><% end_if %>
     <% end_if %>
