@@ -2,20 +2,20 @@
     <% if $FieldClass || $LabelClass %>
         <div class="layout">
             <div class="layout__item<% if $LabelClass %> $LabelClass<% end_if %>">
-                        <% if $Title %><label for="{$ID}">$Title</label><% end_if %>
+                <% if $Title %><label for="{$ID}">$Title</label><% end_if %>
             </div><!--
         ---><div class="layout__item<% if $FieldClass %> $FieldClass<% end_if %>">
-                <div class="middleColumn">
-                    $Field
-                </div>
-                <% if $Description %><span class="description">$Description</span><% end_if %>
-                <% if $Message %><span class="{$MessageClass} {$MessageType}">$Message</span><% end_if %>
+            <div class="middleColumn">
+                <% include InuitFileAttachmentFieldHolder %>
             </div>
+            <% if $Description %><span class="description">$Description</span><% end_if %>
+            <% if $Message %><span class="{$MessageClass} {$MessageType}">$Message</span><% end_if %>
+        </div>
         </div>
     <% else %>
         <% if $Title %><label for="{$ID}">$Title</label><% end_if %>
         <div class="middleColumn">
-            $Field
+            <% include InuitFileAttachmentFieldHolder %>
         </div>
         <% if $Description %><span class="description">$Description</span><% end_if %>
         <% if $Message %><span class="{$MessageClass} {$MessageType}">$Message</span><% end_if %>
